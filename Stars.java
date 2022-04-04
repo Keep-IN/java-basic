@@ -4,6 +4,7 @@ public class Stars {
     static int type;
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Kevin Raihan Saleh");
         System.out.print("Masukan angka untuk memilih piramida (1-6): ");
         type = sc.nextInt();
 

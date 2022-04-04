@@ -3,9 +3,10 @@ import java.util.Scanner;
 public class Stars {
     static int type;
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Masukan angka untuk memilih piramida (1-6): ");
-        type = sc.nextInt();
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Masukan angka untuk memilih piramida (1-6): ");
+            type = sc.nextInt();
+        }
 
         if (type == 1){
             for (int i = 0; i < 5; i++) {
